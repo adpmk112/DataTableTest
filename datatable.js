@@ -42,7 +42,7 @@ function drawTable(){
             },
             {
               render: function(data,type,row){
-                return '<button type="button" class="btn btn-primary">More</button>'
+                return '<button onclick="seeMore()" type="button" class="btn btn-primary"><i class="fas fa-angle-double-right"></i></button>'
               }
             }
           ],

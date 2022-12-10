@@ -12,3 +12,7 @@ function Anime(name,air_date,genre,recommendedFor){
     // }
     // this.name = () => this.name_;
 }
+
+function seeMore(){
+    window.location.href = 'demonSlayerDetail.html';
+}
