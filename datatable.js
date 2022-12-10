@@ -1,5 +1,9 @@
 drawTable();
 
+function seeMore(page){   
+   window.location.href = page;
+}
+
 function drawTable(){
     $(document).ready( function () {  
         $('#pTable').DataTable({
@@ -13,6 +17,9 @@ function drawTable(){
         //  data:pData,
     
           data : pData,
+
+          pageLength: 0,
+          lengthMenu: [2, 3, 5, 10],
     
           columns:[
             {
@@ -41,8 +48,9 @@ function drawTable(){
                 }
             },
             {
+              data:'link',
               render: function(data,type,row){
-                return '<button onclick="seeMore()" type="button" class="btn btn-primary"><i class="fas fa-angle-double-right"></i></button>'
+                return '<form action="'+data+'"> <button type="submit" class="btn btn-primary"><i class="fas fa-angle-double-right"></i></button> </form>';
               }
             }
           ],

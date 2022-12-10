@@ -10,7 +10,7 @@ var pData = [
             "nb_voting" : "13500"
         },
          "photo": "AnimePhoto/DemonSlayer.png",
-         "link": "demonSlayerDetail.html"
+         "link": "https://channelmyanmar.org/tvshows/demon-slayer-kimetsu-no-yaiba-season-1/"
         // "photo": "<img src= 'DemonSlayer.png' alt='DemonSlayer' class='img-circle' width='40' height='40'>",
         },
         {
@@ -24,7 +24,7 @@ var pData = [
             "nb_voting" : "12000"
         },
         "photo": "AnimePhoto/ReZero.png",
-        "link": "reZeroDetail.html"
+        "link": "https://gogoanime.gs/watch/rezero-starting-life-in-another-world.jv78/ep-1"
         },
         {
         "id": "3",
@@ -37,6 +37,6 @@ var pData = [
             "nb_voting" : "12600"
         },
         "photo": "AnimePhoto/Jujutsu.png",
-        "link": "jujutsuDetail.html"
+        "link": "https://channelmyanmar.cc/jujutsu-kaisen-2020/"
         }
     ]
