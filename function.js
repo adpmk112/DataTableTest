@@ -12,8 +12,3 @@ function Anime(name,air_date,genre,recommendedFor){
     // }
     // this.name = () => this.name_;
 }
-
-function seeMore(page){   
-    // window.location.href = page;
-    alert(page)
-}

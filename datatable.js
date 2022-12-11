@@ -29,7 +29,7 @@ function drawTable(){
               }
             },
             {data: 'name'},
-            {data: 'air_date'},
+            {data: 'airDate'},
             {data: 'genre',},
             {data: 'recommendedFor'},
             // {data: 'review', 

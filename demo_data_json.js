@@ -2,7 +2,7 @@ var pData = [
         {
         "id": "1",
         "name": "Kimetsu no Yaiba", 
-        "air_date": "From 2019",
+        "airDate": "From 2019",
         "genre": "Drama, Action, Adventure, Dark Fantasy",
         "recommendedFor" : "Beginners/Fans",
         "review": {
@@ -16,7 +16,7 @@ var pData = [
         {
         "id": "2",
         "name": "Re:Zero -Starting Life in Another World", 
-        "air_date": "From 2016",
+        "airDate": "From 2016",
         "genre": "Isekai, Adventure, Dark Fantasy, Time loop",
         "recommendedFor" : "Fans/Freaks",
         "review": {
@@ -29,7 +29,7 @@ var pData = [
         {
         "id": "3",
         "name": "Jujutsu Kaisen", 
-        "air_date": "From 2020",
+        "airDate": "From 2020",
         "genre": "Dark Fantasy, Action",
         "recommendedFor" : "Fans",
         "review": {
