@@ -1,12 +1,22 @@
 drawTable();
 
+var moreReviewInfo = '<button type="submit" class="btn btn-link btn-sm" id=showVoting><i class="fas fa-caret-down"></i></button>';  
+var reviewInfoCheck = 0;
+var dataTable;
+
 function seeMore(page){   
    window.location.href = page;
 }
 
+$(document).on("click","#showVoting",function(){
+    reviewInfoCheck = 1;
+    dataTable.destroy();
+    drawTable();
+});
+
 function drawTable(){
-    $(document).ready( function () {  
-        $('#pTable').DataTable({
+    $(document).ready( function () {
+        dataTable = $('#pTable').DataTable({
             
         //   data:[
         //     new Anime("Kimetsu no Yaiba", "From 2019","Drama, Action, Adventure, Dark Fantasy","Beginners/Fans"),
@@ -42,7 +52,16 @@ function drawTable(){
                 render: function(data,type,row){
                     // some decision statement
                     // return data.rating;
-                    return "Rating = "+data.rating+" (Nb voting = "+data.nb_voting+")";
+                    // return "Rating = "+data.rating+" (Nb voting = "+data.nb_voting+")";
+                    if(reviewInfoCheck == 0 ){
+                      return "Rating = "+data.rating+moreReviewInfo;
+                    }
+                    else{
+                      {
+                        moreReviewInfo =  " \n Voting = "+data.nb_voting;
+                        return "Rating = "+data.rating+moreReviewInfo;
+                      }
+                    }
                     // var dataSplit = data.rating.split('.',1);
                     // return dataSplit;
                 }
