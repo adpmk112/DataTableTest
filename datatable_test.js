@@ -1,18 +1,21 @@
-drawTable();
-
 var moreReviewInfo = '<button type="submit" class="btn btn-link btn-sm" id=showVoting><i class="fas fa-caret-down"></i></button>';  
 var reviewInfoCheck = 0;
 var dataTable;
 
-function seeMore(page){   
-   window.location.href = page;
-}
+$(document).ready(function(){
+  drawTable();
+});
 
 $(document).on("click","#showVoting",function(){
     reviewInfoCheck = 1;
     dataTable.destroy();
     drawTable();
 });
+
+function imgHoverAnimate(){
+  var imgElement = document.getElementById("photo");
+  imgElement.classList.add("imgPreview")
+}
 
 function drawTable(){
     $(document).ready( function () {
@@ -35,7 +38,7 @@ function drawTable(){
             {
               data: 'photo',
               render: function(data,type,row){
-                return '<img src="'+data+'" alt="Anime icon" class="img-circle" width="40" height="40">'
+                return '<img src="'+data+'" onmouseover="imgHoverAnimate()" id="photo" alt="Anime icon" class="img-circle" width="40" height="40">'
               }
             },
             {data: 'name'},
