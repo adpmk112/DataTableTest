@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link href="createform.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <section>
+      <div class="container pt-4 pb-4 ps-4">
+        <h1 id="title">Create Anime Form</h1>
+        <p id="description">
+          Thank you for taking the time to help us improve the platform
+        </p>
+        <form id="survey-form">
+          <div class="input-box">
+            <label for="name" class="title-label" id="name-label" >Name</label>
+            <input
+              type="text"
+              id="name"
+              class="input-text"
+              placeholder="Enter anime name"
+              required
+              autofocus
+            />
+          </div>
+          <div class="input-box">
+            <label for="email" class="title-label" id="email-label"
+              >Air Date</label
+            >
+            <input
+              type="email"
+              id="email"
+              class="input-text"
+              placeholder="Enter release date"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <label for="number" class="title-label" id="number-label"
+              >Genre</label
+            >
+            <input
+              type="number"
+              id="number"
+              class="input-text"
+              min="0"
+              max="200"
+              placeholder="Enter anime genre"
+            />
+          </div>
+          <h4>This anime is recommended for </h4>
+          <div class="input-box">
+            <select name="role" id="dropdown" class="input-text">
+              <option value="student">Student</option>
+              <option value="full-time-job">Full time job</option>
+              <option value="full-time-learner">Full time learner</option>
+              <option value="other">Other</option>
+              <option value="prefer-not-to-say">Prefer not to say</option>
+            </select>
+          </div>
+          <input
+            type="submit"
+            id="submit"
+            value="Submit"
+            class="submit-button"
+          />
+        </form>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
