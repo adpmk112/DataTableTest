@@ -11,7 +11,7 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <link href="createform.css" rel="stylesheet"/>
+    <link href="createform.css" rel="stylesheet" />
   </head>
   <body>
     <section>
@@ -22,42 +22,54 @@
         </p>
         <form id="survey-form">
           <div class="input-box">
-            <label for="name" class="title-label" id="name-label" >Name</label>
-            <input
+            <div class="row justify-content-around" >
+              <label for="name" class="title-label col-5 input-label float" id="name-label">Name</label>
+              <label for="air-date" class="title-label col-5 input-label float" id="air-date-label">Air Date</label>
+            </div>
+            <div class="row justify-content-around">
+              <input
               type="text"
               id="name"
-              class="input-text"
-              placeholder="Enter anime name"
+              class="input-text col-5"
+              placeholder="Enter Anime Name"
               required
               autofocus
             />
-          </div>
-          <div class="input-box">
-            <label for="email" class="title-label" id="email-label"
-              >Air Date</label
-            >
             <input
-              type="email"
-              id="email"
-              class="input-text"
-              placeholder="Enter release date"
+              type="text"
+              id="air-date"
+              class="input-text col-5"
+              placeholder="Enter Released Date"
               required
+              autofocus
             />
+            </div>
           </div>
           <div class="input-box">
-            <label for="number" class="title-label" id="number-label"
-              >Genre</label
-            >
-            <input
-              type="number"
-              id="number"
-              class="input-text"
-              min="0"
-              max="200"
-              placeholder="Enter anime genre"
+            <div class="row justify-content-around" >
+              <label for="name" class="title-label col-5 input-label float" id="name-label">Genre</label>
+              <label for="air-date" class="title-label col-5 input-label float" id="air-date-label">Link</label>
+            </div>
+            <div class="row justify-content-around">
+              <input
+              type="text"
+              id="name"
+              class="input-text col-5"
+              placeholder="Enter Anime's Genre"
+              required
+              autofocus
             />
+            <input
+              type="text"
+              id="air-date"
+              class="input-text col-5"
+              placeholder="Enter Link To Download or Watch"
+              required
+              autofocus
+            />
+            </div>
           </div>
-          <h4>This anime is recommended for </h4>
+          <h4 class="input-label">This anime is recommended for</h4>
           <div class="input-box">
             <select name="role" id="dropdown" class="input-text">
               <option value="student">Student</option>
