@@ -17,6 +17,32 @@ function imgHoverAnimate(){
   imgElement.classList.add("imgPreview")
 }
 
+function dropDownShow(id) {
+  document.getElementById("myDropdown" + id).classList.toggle("show");
+
+  window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn') && !event.target.matches('.fa-caret-down')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+              }
+          }
+      }
+      if (event.target.matches('aTagId86')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              openDropdown.classList.toggle("show");
+          }
+      }
+  }
+}
+
+
 function drawTable(){
     $(document).ready( function () {
         dataTable = $('#pTable').DataTable({
@@ -74,7 +100,22 @@ function drawTable(){
               render: function(data,type,row){
                 return '<form action="'+data+'"> <button type="submit" class="btn btn-primary"><i class="fas fa-angle-double-right"></i></button> </form>';
               }
-            }
+            },
+            {
+              data: 'id',
+                className: "text-center",
+                render: function (data, type, row) {
+                    return '<div class="dropdown "><button onclick="dropDownShow(' + data + ')" class="dropbtn  btn-aia" >Action<i class="fas fa-caret-down"></i></button>' +
+                        '<div id="myDropdown' + data + '" class="dropdown-content" style="margin-left: -35px;">' +
+                        '<a href="+'+ data + '">End User Detail</a>' +
+                        '<hr style="margin-bottom: 0px;">' +
+                        '<a href="+'+ data + '">End User Detail</a>' +
+                        '<hr style="margin-bottom: 0px;">' +
+                        '<a href="+'+ data + '">End User Detail</a>' +
+                        '<hr style="margin-bottom: 0px;">' +
+                        '</div></div>';
+                }
+            },
           ],
           "columnDefs": [{
                 targets: [0],
