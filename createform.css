@@ -22,7 +22,9 @@ body {
   padding: 50px;
   /* background-image: url(https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80); */
   background-image: url(BackgroundPhoto/anime-background.png);
-  background-size: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   /* background-color: #29203f; */
 }
 
