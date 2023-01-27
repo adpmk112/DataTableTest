@@ -15,14 +15,14 @@
   </head>
   <body>
     <section>
-      <div class="container pt-4 pb-4 ps-4">
+      <div class="container pt-4 pb-4 ps-4 ">
         <h1 id="title">Create Anime Form</h1>
         <p id="description">
           Thank you for taking the time to help us improve the platform
         </p>
         <form id="survey-form">
           <div class="input-box">
-            <div class="row justify-content-around" >
+            <div class="row justify-content-around">
               <label for="name" class="title-label col-5 input-label float" id="name-label">Name</label>
               <label for="air-date" class="title-label col-5 input-label float" id="air-date-label">Air Date</label>
             </div>
@@ -84,6 +84,7 @@
             id="submit"
             value="Submit"
             class="submit-button"
+            onclick="formSubmit()"
           />
         </form>
       </div>
@@ -94,5 +95,9 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <!-- Own Js files-->
+    <script src="datatable_test.js"></script>
+    <script src="demo_data_json.js"></script>
+    <script src="function.js"></script>
   </body>
 </html>
