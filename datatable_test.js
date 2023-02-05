@@ -1,5 +1,3 @@
-var moreReviewInfo =
-  '<button type="submit" class="btn btn-link btn-sm" id=showVoting><i class="fas fa-caret-down"></i></button>';
 var reviewInfoCheck = 0;
 var dataTable;
 
@@ -46,19 +44,6 @@ function dropDownShow(id) {
   };
 }
 
-function formSubmit() {
-  alert("hi");
-  const fs = require("fs");
-
-  const content = "Some Content !";
-
-  fs.writeFile("C:UsersDELLDesktop", content, (err) => {
-    if (err) {
-      alert(err);
-    }
-  });
-}
-
 function drawTable() {
   $(document).ready(function () {
     dataTable = $("#pTable").DataTable({
@@ -96,22 +81,7 @@ function drawTable() {
         //     sort: 'nb_voting'
         // },}
         {
-          data: "review",
-          render: function (data, type, row) {
-            // some decision statement
-            // return data.rating;
-            // return "Rating = "+data.rating+" (Nb voting = "+data.nb_voting+")";
-            if (reviewInfoCheck == 0) {
-              return "Rating = " + data.rating + moreReviewInfo;
-            } else {
-              {
-                moreReviewInfo = " \n Voting = " + data.nb_voting;
-                return "Rating = " + data.rating + moreReviewInfo;
-              }
-            }
-            // var dataSplit = data.rating.split('.',1);
-            // return dataSplit;
-          },
+          data: "rating",
         },
         {
           data: "link",
@@ -120,33 +90,6 @@ function drawTable() {
               '<form action="' +
               data +
               '"> <button type="submit" class="btn btn-primary"><i class="fas fa-angle-double-right"></i></button> </form>'
-            );
-          },
-        },
-        {
-          data: "id",
-          className: "text-center",
-          render: function (data, type, row) {
-            return (
-              '<div class="dropdown "><button onclick="dropDownShow(' +
-              data +
-              ')" class="dropbtn  btn-aia" >Action<i class="fas fa-caret-down"></i></button>' +
-              '<div id="myDropdown' +
-              data +
-              '" class="dropdown-content" style="margin-left: -35px;">' +
-              '<a href="+' +
-              data +
-              '">End User Detail</a>' +
-              '<hr style="margin-bottom: 0px;">' +
-              '<a href="+' +
-              data +
-              '">End User Detail</a>' +
-              '<hr style="margin-bottom: 0px;">' +
-              '<a href="+' +
-              data +
-              '">End User Detail</a>' +
-              '<hr style="margin-bottom: 0px;">' +
-              "</div></div>"
             );
           },
         },
