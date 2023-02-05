@@ -1,33 +1,42 @@
 var pData = [
         {
         "id": "1",
-        "name": "Kimetsu no Yaiba", 
-        "airDate": "From 2019",
-        "genre": "Drama, Action, Adventure, Dark Fantasy",
-        "recommendedFor" : "Beginners/Fans",
-        "rating": "9.3",
-         "photo": "AnimePhoto/DemonSlayer.png",
-         "link": "https://channelmyanmar.org/tvshows/demon-slayer-kimetsu-no-yaiba-season-1/"
-        // "photo": "<img src= 'DemonSlayer.png' alt='DemonSlayer' class='img-circle' width='40' height='40'>",
+        "name": "Danmachi Season-4 Part2", 
+        "airDate": "2023 January",
+        "genre": "Action, Adventure, Fantasy",
+        "recommendedFor" : "To inspire with courage or hope",
+        "rating": "9.5",
+         "photo": "",
+         "link": "https://t.me/animelampmyanmar/473"
         },
         {
         "id": "2",
-        "name": "Re:Zero -Starting Life in Another World", 
-        "airDate": "From 2016",
-        "genre": "Isekai, Adventure, Dark Fantasy, Time loop",
-        "recommendedFor" : "Fans/Freaks",
-        "rating": "8.9",
-        "photo": "AnimePhoto/ReZero.png",
-        "link": "https://gogoanime.gs/watch/rezero-starting-life-in-another-world.jv78/ep-1"
+        "name": "Tokyo Revenger Season2", 
+        "airDate": "2023 January",
+        "genre": "Action, Fiction, Thriller",
+        "recommendedFor" : "Excitement, Fight Scene",
+        "rating": "9.2",
+        "photo": "",
+        "link": "https://t.me/+QnZYTPBUorgyZGJl"
         },
         {
         "id": "3",
-        "name": "Jujutsu Kaisen", 
-        "airDate": "From 2020",
-        "genre": "Dark Fantasy, Action",
-        "recommendedFor" : "Fans",
-        "rating": "9.3",
-        "photo": "AnimePhoto/Jujutsu.png",
-        "link": "https://channelmyanmar.cc/jujutsu-kaisen-2020/"
-        }
+        "name": "SPY X Family Part-2", 
+        "airDate": "2022 October",
+        "genre": "Action, Comedy, Spy",
+        "recommendedFor" : "Family, Detective",
+        "rating": "9.5",
+        "photo": "",
+        "link": "https://t.me/+u7GwL8-v-JQwYjdl"
+        },
+        {
+            "id": "4",
+            "name": "Beast Tamer", 
+            "airDate": "2022 October",
+            "genre": "Fantasy, Harem Novel",
+            "recommendedFor" : "Harem",
+            "rating": "9.0",
+            "photo": "AnimePhoto/BeastTamer.png",
+            "link": "https://t.me/animelampmyanmar/360"
+            }
     ]

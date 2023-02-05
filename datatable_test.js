@@ -58,7 +58,7 @@ function drawTable() {
       data: pData,
 
       pageLength: 0,
-      lengthMenu: [2, 3, 5, 10],
+      lengthMenu: [10, 20, 30, 40],
 
       columns: [
         {
@@ -67,7 +67,7 @@ function drawTable() {
             return (
               '<img src="' +
               data +
-              '" onmouseover="imgHoverAnimate()" id="photo" alt="Anime icon" class="img-circle" width="40" height="40">'
+              '" onmouseover="imgHoverAnimate()" id="photo" class="img-circle" width="40" height="40">'
             );
           },
         },
