@@ -6,7 +6,7 @@ var pData = [
         "genre": "Action, Adventure, Fantasy",
         "recommendedFor" : "To inspire with courage or hope",
         "rating": "9.5",
-         "photo": "",
+         "photo": "AnimePhoto/DanmachiS4.jpg",
          "link": "https://t.me/animelampmyanmar/473"
         },
         {
@@ -16,7 +16,7 @@ var pData = [
         "genre": "Action, Fiction, Thriller",
         "recommendedFor" : "Excitement, Fight Scene",
         "rating": "9.2",
-        "photo": "",
+        "photo": "AnimePhoto/TokyoRevengerS2.jpg",
         "link": "https://t.me/+QnZYTPBUorgyZGJl"
         },
         {
@@ -26,7 +26,7 @@ var pData = [
         "genre": "Action, Comedy, Spy",
         "recommendedFor" : "Family, Detective",
         "rating": "9.5",
-        "photo": "",
+        "photo": "AnimePhoto/SPYXFamilyP2.jpg",
         "link": "https://t.me/+u7GwL8-v-JQwYjdl"
         },
         {
