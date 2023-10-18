@@ -5,16 +5,58 @@ $(document).ready(function () {
   drawTable();
 });
 
+$(document).on("click", "#showVoting", function () {
+  reviewInfoCheck = 1;
+  dataTable.destroy();
+  drawTable();
+});
+
 function imgHoverAnimate() {
   var imgElement = document.getElementById("photo");
   imgElement.classList.add("imgPreview");
 }
 
+function dropDownShow(id) {
+  document.getElementById("myDropdown" + id).classList.toggle("show");
+
+  window.onclick = function (event) {
+    if (
+      !event.target.matches(".dropbtn") &&
+      !event.target.matches(".fa-caret-down")
+    ) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains("show")) {
+          openDropdown.classList.remove("show");
+        }
+      }
+    }
+    if (event.target.matches("aTagId86")) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        openDropdown.classList.toggle("show");
+      }
+    }
+  };
+}
+
 function drawTable() {
   $(document).ready(function () {
     dataTable = $("#pTable").DataTable({
+      //   data:[
+      //     new Anime("Kimetsu no Yaiba", "From 2019","Drama, Action, Adventure, Dark Fantasy","Beginners/Fans"),
+      //     new Anime("Re:Zero -Starting Life in Another World", "From 2016","Isekai, Adventure, Dark Fantasy, Time loop",
+      //     "Fans/Freaks")
+      //   ],
+
+      //  data:pData,
 
       data: pData,
+
       pageLength: 0,
       lengthMenu: [10, 20, 30, 40],
 
@@ -33,6 +75,11 @@ function drawTable() {
         { data: "airDate" },
         { data: "genre" },
         { data: "recommendedFor" },
+        // {data: 'review',
+        //     render : {
+        //     _: 'rating',
+        //     sort: 'nb_voting'
+        // },}
         {
           data: "rating",
         },
@@ -59,10 +106,6 @@ function drawTable() {
           searchable: false,
         },
       ],
-      dom: 'Bfrtip',
-      buttons:[
-        'copy', 'csv', 'excel', 'pdf', 'print'
-      ]
     });
   });
 }
