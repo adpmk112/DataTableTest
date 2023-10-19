@@ -61,7 +61,26 @@ function drawTable() {
       ],
       dom: 'Bfrtip',
       buttons:[
-        'copy', 'csv', 'excel', 'pdf', 'print'
+        {
+          extend : 'copy',
+          text: 'Copy',
+          filename: 'Copy report'
+        },
+        {
+          extend: 'excel',
+          text: 'Excel',
+          filename: 'Anime report'
+        },
+        {
+          extend: 'csv',
+          text: 'CSV',
+          filename: 'Anime report'
+        },
+        {
+          extend: 'print',
+          text: 'Print',
+          filename: 'Anime report'
+        }
       ]
     });
   });
