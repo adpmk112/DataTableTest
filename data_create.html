@@ -22,51 +22,58 @@
         </p>
         <form id="survey-form">
           <div class="input-box">
+            <label for="name" class="title-label col-5 input-label float" id="name-label">Name</label>
             <div class="row justify-content-around">
-              <label for="name" class="title-label col-5 input-label float" id="name-label">Name</label>
-              <label for="air-date" class="title-label col-5 input-label float" id="air-date-label">Air Date</label>
+              <!-- <label for="air-date" class="title-label col-5 input-label float" id="air-date-label">Air Date</label> -->
             </div>
-            <div class="row justify-content-around">
-              <input
-              type="text"
-              id="name"
-              class="input-text col-5"
-              placeholder="Enter Anime Name"
-              required
-              autofocus
-            />
+
             <input
+            type="text"
+            id="name"
+            name="name"
+            class="input-text col-5"
+            placeholder="Enter Anime Name"
+            required
+            autofocus
+          />
+          
+            <div class="row justify-content-around">
+             
+            <!-- <input
               type="text"
               id="air-date"
+              name="air-date"
               class="input-text col-5"
               placeholder="Enter Released Date"
               required
               autofocus
-            />
+            /> -->
             </div>
           </div>
           <div class="input-box">
             <div class="row justify-content-around" >
-              <label for="name" class="title-label col-5 input-label float" id="name-label">Genre</label>
-              <label for="air-date" class="title-label col-5 input-label float" id="air-date-label">Link</label>
+              <!-- <label for="name" class="title-label col-5 input-label float" id="name-label">Genre</label> -->
+              <!-- <label for="air-date" class="title-label col-5 input-label float" id="air-date-label">Link</label> -->
             </div>
             <div class="row justify-content-around">
-              <input
+              <!-- <input
               type="text"
-              id="name"
+              id="genre"
+              name="genre"
               class="input-text col-5"
               placeholder="Enter Anime's Genre"
               required
               autofocus
-            />
-            <input
+            /> -->
+            <!-- <input
               type="text"
-              id="air-date"
+              id="download-link"
+              name="download-link"
               class="input-text col-5"
               placeholder="Enter Link To Download or Watch"
               required
               autofocus
-            />
+            /> -->
             </div>
           </div>
           <h4 class="input-label">This anime is recommended for</h4>
@@ -92,7 +99,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
-    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
@@ -101,8 +108,6 @@
     ></script>
 
     <!-- Own Js files-->
-    <script src="datatable_test.js"></script>
-    <script src="demo_data_json.js"></script>
     <script src="function.js"></script>
   </body>
 </html>
