@@ -13,7 +13,6 @@ function imgHoverAnimate() {
 function drawTable() {
   $(document).ready(function () {
     dataTable = $("#pTable").DataTable({
-
       data: pData,
       pageLength: 0,
       lengthMenu: [10, 20, 30, 40],
@@ -31,7 +30,12 @@ function drawTable() {
         },
         { data: "name" },
         { data: "airDate" },
-        { data: "genre" },
+        {
+          data: "genre",
+          render: function (data, type, row) {
+            return "<ul><li>" + data.join("</li><li>") + "</li></ul>";
+          },
+        },
         { data: "recommendedFor" },
         {
           data: "rating",
@@ -59,29 +63,29 @@ function drawTable() {
           searchable: false,
         },
       ],
-      dom: 'Bfrtip',
-      buttons:[
+      dom: "Bfrtip",
+      buttons: [
         {
-          extend : 'copy',
-          text: 'Copy',
-          filename: 'Copy report'
+          extend: "copy",
+          text: "Copy",
+          filename: "Copy report",
         },
         {
-          extend: 'excel',
-          text: 'Excel',
-          filename: 'Anime report'
+          extend: "excel",
+          text: "Excel",
+          filename: "Anime report",
         },
         {
-          extend: 'csv',
-          text: 'CSV',
-          filename: 'Anime report'
+          extend: "csv",
+          text: "CSV",
+          filename: "Anime report",
         },
         {
-          extend: 'print',
-          text: 'Print',
-          filename: 'Anime report'
-        }
-      ]
+          extend: "print",
+          text: "Print",
+          filename: "Anime report",
+        },
+      ],
     });
   });
 }
